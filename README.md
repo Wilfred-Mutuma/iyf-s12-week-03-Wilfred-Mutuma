@@ -93,9 +93,9 @@ I am also learning to maintain a clear project structure, use meaningful commit 
 
 - **Partner:** [@partner](https://github.com/okoyo13)
 - **Pair repo:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13
-- **PR I opened:** https://github.com/.../pull/N
-- **PR I reviewed:** https://github.com/.../pull/N
-- **Merge-conflict PR:** https://github.com/.../pull/N
+- **PR I opened:** [PR #3](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/3)
+- **PR I reviewed:** [https://github.com/.../pull/N](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/1)
+- **Merge-conflict PR:** [https://github.com/.../pull/N](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/1#pullrequestreview-5577217220)
 
 ## License
 
