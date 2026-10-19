@@ -1,14 +1,14 @@
 # Dependencies
 node_modules/
 
-# IDE
+# IDE / Editor config
 .vscode/
 .idea/
 
-# OS files
+# OS system trash files
 .DS_Store
 Thumbs.db
 
-# Temporary files
+# Temporary execution files
 *.log
 *.tmp
