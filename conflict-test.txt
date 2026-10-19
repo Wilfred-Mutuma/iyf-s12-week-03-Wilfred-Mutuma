@@ -1,1 +1,2 @@
 Branch A added this text line
+Branch B added different text here
