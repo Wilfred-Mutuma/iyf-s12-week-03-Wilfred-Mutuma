@@ -12,10 +12,6 @@ This project builds on my Week 2 portfolio and demonstrates my progress in HTML,
 
 ## Screenshot
 
-Add a screenshot of your Week 3 website to the `images` folder and save it as `screenshot.png`.
-
-Then display it here:
-
 ![Week 3 Portfolio Screenshot](./images/screenshot.png)
 
 ## Features
@@ -91,11 +87,12 @@ I am also learning to maintain a clear project structure, use meaningful commit 
 
 ## Collaboration
 
-- **Partner:** [@partner](https://github.com/okoyo13)
-- **Pair repo:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13
-- **PR I opened:** [PR #3](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/3)
-- **PR I reviewed:** [https://github.com/.../pull/N](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/1)
-- **Merge-conflict PR:** [https://github.com/.../pull/N](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/1#pullrequestreview-5577217220)
+## Collaboration
+- **Partner:** [@okoyo13](https://github.com)
+- **Pair repo:** https://github.com/iyf-s12-week-03-pair-okoyo13
+- **PR I opened:** https://github.com/iyf-s12-week-03-pair-okoyo13/pull/3
+- **PR I reviewed:** https://github.com/iyf-s12-week-03-pair-okoyo13/pull/4
+- **Merge-conflict PR:** https://github.com/iyf-s12-week-03-pair-okoyo13/pull/2
 
 ## License
 
