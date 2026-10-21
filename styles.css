@@ -1,0 +1,735 @@
+
+/* ========================================
+   1. CSS VARIABLES: COLOURS AND TYPOGRAPHY
+======================================== */
+
+:root {
+    /* Colour system */
+    --color-primary: #1d4ed8;
+    --color-secondary: #0f172a;
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text: #1e293b;
+    --color-muted: #64748b;
+    --color-primary-light: #dbeafe;
+    --color-primary-dark: #1e40af;
+    --color-border: #cbd5e1;
+    --color-danger: #b91c1c;
+    --color-success: #15803d;
+
+    /* Typography scale */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    /* Layout */
+    --content-width: 1100px;
+    --border-radius: 8px;
+    --shadow: 0 2px 8px rgb(15 23 42 / 8%);
+}
+
+/* ========================================
+   2. RESET AND BOX MODEL
+======================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding: var(--space-md);
+}
+
+/* ========================================
+   3. TYPOGRAPHY SYSTEM
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md);
+}
+
+h1 {
+    font-size: var(--font-4xl);
+}
+
+h2 {
+    font-size: var(--font-3xl);
+    margin-top: var(--space-xl);
+}
+
+h3 {
+    font-size: var(--font-2xl);
+}
+
+h4 {
+    font-size: var(--font-xl);
+}
+
+p {
+    font-size: var(--font-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+}
+
+small {
+    font-size: var(--font-sm);
+    color: var(--color-muted);
+}
+
+ul,
+ol {
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+}
+
+li {
+    margin-bottom: var(--space-sm);
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ========================================
+   4. LINKS AND NAVIGATION
+======================================== */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-md);
+    background-color: var(--color-surface);
+    border-radius: var(--border-radius);
+}
+
+nav a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+a {
+    color: var(--color-primary);
+    text-underline-offset: 3px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* ========================================
+   5. IMAGES
+======================================== */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+figure {
+    margin-bottom: var(--space-lg);
+}
+
+figcaption {
+    margin-top: var(--space-sm);
+    font-size: var(--font-sm);
+    color: var(--color-muted);
+}
+
+/* ========================================
+   6. FORMS AND BUTTONS
+======================================== */
+
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin-top: var(--space-md);
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    margin-top: var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: var(--color-primary);
+}
+
+form input:invalid:not(:placeholder-shown),
+form textarea:invalid:not(:placeholder-shown) {
+    border-color: var(--color-danger);
+}
+
+form button,
+button {
+    display: inline-block;
+    margin-top: var(--space-lg);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+form button:hover,
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+button:disabled {
+    background-color: var(--color-muted);
+    cursor: not-allowed;
+}
+
+fieldset {
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+legend {
+    padding-inline: var(--space-sm);
+    font-weight: bold;
+}
+
+/* Secondary button */
+.button-secondary {
+    background-color: var(--color-secondary);
+}
+
+.button-secondary:hover {
+    background-color: var(--color-muted);
+}
+
+/* ========================================
+   7. MAIN CONTENT AND FOOTER
+======================================== */
+
+main {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+section {
+    margin-bottom: var(--space-xl);
+    padding: 1.25rem;
+    background-color: var(--color-surface);
+    border-radius: var(--border-radius);
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted);
+}
+
+/* ========================================
+   8. REUSABLE CARDS
+======================================== */
+
+.card {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.card h2,
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   9. BOX MODEL PRACTICE
+======================================== */
+
+/* Four box model examples */
+.box-examples {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 220px), 1fr)
+    );
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.model-box {
+    padding: 16px;
+    border: 2px solid var(--color-border);
+    background-color: var(--color-primary-light);
+}
+
+.model-box p {
+    margin-top: var(--space-sm);
+}
+
+.content-box {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-border);
+}
+
+.padding-box {
+    padding: 28px;
+    background-color: #bfdbfe;
+    border-color: var(--color-primary);
+}
+
+.border-box-example {
+    border: 5px solid var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+
+.margin-box {
+    margin: 12px;
+    padding: 12px;
+    border: 2px dashed var(--color-primary);
+    background-color: #eff6ff;
+    outline: 1px dotted var(--color-muted);
+    outline-offset: 4px;
+}
+
+/* Exercise: total width of 300px */
+.broken-box {
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-primary-light);
+    margin-top: var(--space-md);
+}
+
+.broken-box p {
+    margin: 0;
+}
+
+/* Exercise: portfolio card with total width of 300px */
+.practice-card {
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-surface);
+    margin-top: var(--space-md);
+}
+
+.practice-card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.practice-card-content {
+    padding-top: 16px;
+}
+
+.practice-card h3 {
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   10. FLEXBOX LAYOUT
+======================================== */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1 1 200px;
+    padding: var(--space-lg);
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.flex-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* ========================================
+   11. CSS GRID LAYOUT
+======================================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+}
+
+.grid-item {
+    min-width: 0;
+    padding: var(--space-lg);
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.grid-item h3 {
+    margin-top: 0;
+}
+
+.grid-item p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive grid: tablets */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Responsive grid: small phones */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ========================================
+   12. PROJECTS AND CONTENT LISTS
+======================================== */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 250px), 1fr)
+    );
+    gap: var(--space-lg);
+}
+
+.project-list article {
+    padding: var(--space-lg);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.project-list article h2,
+.project-list article h3 {
+    margin-top: 0;
+}
+
+.project-list article img {
+    width: 100%;
+    margin-bottom: var(--space-md);
+}
+
+
+/* ========================================
+   13. MOBILE-FIRST RESPONSIVE DESIGN
+======================================== */
+
+/* Base styles: start with small screens */
+body {
+    padding: var(--space-md);
+}
+
+main {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+nav a {
+    padding: var(--space-xs);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Project cards: one column by default */
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+/* Grid practice: one column by default */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+/* Learning cards: wrap on smaller screens */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.flex-item {
+    flex: 1 1 100%;
+    min-width: 0;
+}
+
+/* Tablet screens */
+@media (min-width: 600px) {
+    body {
+        padding: var(--space-lg);
+    }
+
+    .project-list,
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .flex-item {
+        flex: 1 1 40%;
+    }
+
+    nav {
+        gap: var(--space-md);
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 900px) {
+    body {
+        padding: var(--space-xl);
+    }
+
+    .project-list,
+    .grid-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .flex-item {
+        flex: 1 1 200px;
+    }
+
+    nav {
+        gap: var(--space-lg);
+    }
+}
+
+
+/* ========================================
+   14. REDUCED MOTION ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+
+/* ========================================
+   15. POLISH AND REFINEMENT
+======================================== */
+
+/* Consistent spacing for page headers */
+header {
+    margin-bottom: var(--space-xl);
+}
+
+header p {
+    max-width: 70ch;
+}
+
+/* Smooth, consistent card presentation */
+.card,
+.project-list article,
+.grid-item,
+.flex-item {
+    border-radius: var(--border-radius);
+    overflow-wrap: anywhere;
+}
+
+/* Improve project card links */
+.project-list article a {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    font-weight: bold;
+}
+
+/* Consistent link and button interactions */
+a,
+button {
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Prevent long text from breaking layouts */
+p,
+li {
+    overflow-wrap: break-word;
+}
+
+/* Keep form controls readable */
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* Better spacing for page sections */
+section + section {
+    margin-top: var(--space-xl);
+}
+
+/* Clear visual separation for footer */
+footer {
+    max-width: var(--content-width);
+    margin-inline: auto;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
