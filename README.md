@@ -92,10 +92,10 @@ I am also learning to maintain a clear project structure, use meaningful commit 
 ## Collaboration
 
 - **Partner:** [@partner](https://github.com/okoyo13)
-- **Pair repo:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13
-- **PR I opened:** https://github.com/.../pull/N
-- **PR I reviewed:** https://github.com/.../pull/N
-- **Merge-conflict PR:** https://github.com/.../pull/N
+- **Pair repo:** [repo](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13)
+- **PR I opened:** [PR-Opened](https://github.com/iyf-s12-week-03-pair-okoyo13/pull/3)
+- **PR I reviewed:** [PR-I Reviewed](https://github.com/iyf-s12-week-03-pair-okoyo13/pull/4)
+- **Merge-conflict PR:** [Merge-Conflict](https://github.com/iyf-s12-week-03-pair-okoyo13/pull/2)
 
 ## License
 
