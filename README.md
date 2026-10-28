@@ -1,14 +1,16 @@
 # Wilfred Mutuma - Week 03 Project
 
-Welcome to my Week 3 portfolio project for the IYF Weekend Academy Season 12 program. I am an Electrical Engineer and Security Systems Specialist who is developing skills in web development.
+## Project Overview
 
-This project builds on my Week 2 portfolio and demonstrates my progress in HTML, CSS, command-line tools, Git, and GitHub workflows. It also documents my learning journey as I work toward building professional, responsive websites.
+Welcome to my Week 3 portfolio project for the IYF Weekend Academy Season 12 program. I am an Electrical Engineer and Security Systems Specialist developing my web development skills.
+
+This project builds on my Week 2 portfolio and demonstrates my progress in HTML, CSS, command-line tools, Git, and GitHub collaboration workflows.
 
 ## Live Demo
 
-[View My Live Portfolio](https://wilfred-mutuma.github.io/iyf-s12-week-03-Wilfred-Mutuma/)
-
-[Visit My GitHub Profile](https://github.com/Wilfred-Mutuma)
+- **Week 3 Portfolio:** [View My Live Portfolio](https://wilfred-mutuma.github.io/iyf-s12-week-03-Wilfred-Mutuma/)
+- **GitHub Repository:** [View the Week 3 Source Code](https://github.com/Wilfred-Mutuma/iyf-s12-week-03-Wilfred-Mutuma)
+- **GitHub Profile:** [Wilfred-Mutuma](https://github.com/Wilfred-Mutuma)
 
 ## Screenshot
 
@@ -16,58 +18,59 @@ This project builds on my Week 2 portfolio and demonstrates my progress in HTML,
 
 ## Features
 
-- Responsive portfolio design for different screen sizes.
-- Multi-page portfolio structure.
+- Multi-page portfolio with Home, About, Projects, and Contact pages.
 - Navigation between portfolio pages.
-- CSS styling using Flexbox and Grid where implemented.
-- Hover and focus states for interactive elements where implemented.
+- CSS styling for the portfolio.
+- Contact information and an email link.
 - Git version control and documented development progress.
-- A professional README documenting the project.
+- Collaboration practice using branches, pull requests, reviews, and merge-conflict resolution.
+- Project documentation using Markdown.
 
 ## Technologies Used
 
-- HTML5 — webpage structure.
-- CSS3 — styling, layouts, Flexbox, Grid, and responsive design.
-- Git — version control and commit history.
-- GitHub — repository hosting and collaboration.
-- GitHub Pages — website deployment.
-- Visual Studio Code — code editing and development.
+- **HTML5:** Webpage structure and content.
+- **CSS3:** Styling and page layouts.
+- **Git:** Version control, branching, commits, and merging.
+- **GitHub:** Repository hosting and collaboration.
+- **GitHub Pages:** Website hosting, once deployment is verified.
+- **Visual Studio Code:** Code editing and development.
+- **Command line:** File and directory management.
 
 ## Project Structure
 
-The following is a starting outline. Update it to match the actual files and folders in this repository.
-
-```text
 iyf-s12-week-03-Wilfred-Mutuma/
+├── daily-challenges/
+│   └── index.html
+├── images/
 ├── index.html
 ├── about.html
 ├── projects.html
 ├── contact.html
-├── style.css
-├── images/
+├── styles.css
 ├── README.md
-└── .gitignore
-```
+├── .gitignore
+├── new-project.sh
+└── terminal-log.md
 
-## What I Learned
+## Lessons Learned
 
-During Week 3, I am developing practical skills in:
+During Week 3, I practised:
 
 - Navigating directories and managing files using the command line.
-- Using terminal commands to find files and search their contents.
-- Understanding Git repositories, staging, commits, and commit history.
+- Using terminal commands to locate files and search their contents.
+- Staging, committing, and reviewing changes with Git.
 - Creating branches and merging changes.
-- Understanding how merge conflicts occur and how to resolve them.
+- Understanding and resolving merge conflicts.
 - Connecting local repositories to GitHub using remote repositories.
 - Pushing changes to GitHub and pulling updates.
-- Writing meaningful commit messages and documenting projects professionally.
+- Writing meaningful commit messages.
+- Collaborating through pull requests and code reviews.
 
 ## Challenges Faced
 
-One of the important challenges in collaborative development is managing changes made to the same file. Git merge conflicts require reviewing the conflicting changes, choosing the correct content, and completing the merge carefully.
+One challenge in collaborative development is managing changes made to the same file. Merge conflicts require reviewing competing changes, deciding which content to keep, and completing the merge carefully.
 
-I am also learning to maintain a clear project structure, use meaningful commit messages, and verify that changes are correctly reflected in the deployed website.
-
+I also practised maintaining an organised project structure, writing meaningful commit messages, and checking that repository changes are reflected correctly.
 
 ## Future Improvements
 
@@ -75,27 +78,25 @@ I am also learning to maintain a clear project structure, use meaningful commit 
 - [ ] Implement a dark mode.
 - [ ] Add project filtering.
 - [ ] Improve accessibility and keyboard navigation.
-- [ ] Add more completed projects to the portfolio.
-- [ ] Continue improving responsive layouts across screen sizes.
+- [ ] Add more completed projects.
+- [ ] Test layouts across different screen sizes.
+- [ ] Verify the Week 3 GitHub Pages deployment.
+- [ ] Add a confirmed portfolio screenshot to this README.
 
 ## Contact
 
 - **Name:** Wilfred Mutuma
-- **Email:** wilfredmtm@gmail.com
+- **Email:** [wilfredmtm@gmail.com](mailto:wilfredmtm@gmail.com)
 - **GitHub:** [@Wilfred-Mutuma](https://github.com/Wilfred-Mutuma)
-- **Portfolio:** [Visit My Website](https://wilfred-mutuma.github.io)
+- **Portfolio:** [Visit My Website](https://wilfred-mutuma.github.io/)
 
 ## Collaboration
 
-## Collaboration
-- **Partner:** [@okoyo13](https://github.com)
-- **Pair repo:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13
-- **PR I opened:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/3
-- **PR I reviewed:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/4
-- **Merge-conflict PR:** https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/2
-
-
-
+- **Partner:** [Rodricks Okoyo (@okoyo13)](https://github.com/okoyo13)
+- **Pair repository:** [iyf-s12-week-03-pair-okoyo13](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13)
+- **PR I opened:** [Pull request #3](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/3)
+- **PR I reviewed:** [Pull request #4](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/4)
+- **Merge-conflict PR:** [Pull request #2](https://github.com/okoyo13/iyf-s12-week-03-pair-okoyo13/pull/2)
 
 ## License
 
