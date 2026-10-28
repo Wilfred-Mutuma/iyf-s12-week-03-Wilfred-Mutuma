@@ -1,31 +1,56 @@
 # Terminal Command Log - Wilfred Mutuma
 
-## Task 5.1 & 5.2: Directory Structures and File Operations
+## Week 3: Tools and Workflow
 
-This section documents terminal commands for creating directories, creating files, copying files, moving files, renaming files, and deleting files. The commands below are examples and should be marked as completed only when they have actually been executed.
+This document records terminal commands used during the Week 3 project and provides reference commands for directory and file management practice.
 
-### Directory and File Operations
+## 1. Git and GitHub Workflow
 
-- `mkdir terminal-practice` - Creates a directory named `terminal-practice` in the current location.
-- `cd terminal-practice` - Changes the current directory to `terminal-practice`.
-- `New-Item -ItemType Directory -Force -Path "my-project/src/css","my-project/src/js","my-project/src/images","my-project/docs","my-project/tests"` - Creates the project directory structure in PowerShell.
-- `New-Item -ItemType File -Path "my-project/README.md" -Force` - Creates the README file.
-- `New-Item -ItemType File -Path "index.html" -Force` - Creates an HTML file.
-- `Copy-Item "index.html" "backup.html"` - Copies a file to a backup file.
-- `Move-Item "backup.html" "docs/"` - Moves the backup file into the documentation folder.
-- `Rename-Item "index.html" "home.html"` - Renames the HTML file.
-- `Remove-Item "home.html"` - Deletes the file. Use this command carefully.
+The following commands were used during the project workflow.
 
-## Task 5.3: Core Diagnostic Queries
+- `git status` - Checks the current branch, working tree, and synchronization with the remote repository.
+- `git log --oneline --graph --decorate -15` - Displays recent commits and their relationships.
+- `git log --all --oneline --grep="conflict"` - Searches commit messages for merge-conflict-related work.
+- `git add terminal-log.md` - Stages the terminal log for committing.
+- `git commit -m "Docs: fix terminal log heading"` - Records the terminal log heading change in Git.
+- `git push origin main` - Pushes the local main branch to GitHub.
+- `git branch` - Lists local branches.
+- `git branch --merged main` - Lists local branches merged into main.
+- `git branch -d branch-A` - Deletes the local branch named branch-A after Git confirms it is safe.
+- `git branch -d branch-B` - Deletes the local branch named branch-B after Git confirms it is safe.
 
-- `Get-ChildItem -Recurse -Filter "*.html" | Measure-Object` - Lists HTML files recursively and provides a count.
-- `Get-ChildItem -Recurse -File | Select-String -Pattern "contact"` - Searches files under the current directory for the word `contact`.
-- `(Get-Content "styles.css").Count` - Counts the lines in `styles.css`, provided the file exists at that path.
-- `Get-History | Select-Object -Last 10` - Displays the last ten commands recorded in the current PowerShell session.
+## 2. Directory and File Management Practice
 
-## Notes
+The following PowerShell commands are reference examples. They should only be described as completed tasks if they were actually executed.
 
-- These are PowerShell-compatible examples.
-- The commands are provided as a reference and are not proof that every operation was performed.
-- The actual terminal history and completed tasks should be checked before submission.
-- File paths depend on the directory from which each command is run.
+- `New-Item -ItemType Directory -Path "terminal-practice"` - Creates a directory.
+- `Set-Location "terminal-practice"` - Changes the current directory.
+- `New-Item -ItemType File -Path "index.html"` - Creates a file.
+- `Copy-Item "index.html" "backup.html"` - Copies a file.
+- `Move-Item "backup.html" "docs/"` - Moves a file into a directory.
+- `Rename-Item "index.html" "home.html"` - Renames a file.
+- `Remove-Item "home.html"` - Deletes a file. Use carefully.
+
+## 3. Diagnostic Commands
+
+These PowerShell commands can be used to inspect project files. They are included as references unless their execution has been confirmed.
+
+- `Get-ChildItem -Recurse -Filter "*.html" | Measure-Object` - Counts HTML files found recursively.
+- `Get-ChildItem -Recurse -File | Select-String -Pattern "contact"` - Searches files for the word contact.
+- `(Get-Content "styles.css").Count` - Counts lines in styles.css.
+- `Get-History | Select-Object -Last 10` - Displays recent commands recorded in the current PowerShell session.
+
+## 4. Merge-Conflict Evidence
+
+The Git history contains commits related to merge-conflict resolution:
+
+- `ad79286` - Fix: resolve remote merge conflict in README documentation.
+- `be78131` - Fix: resolve merge conflict in conflict-test.txt.
+- `dc53d45` - Add: baseline file for conflict testing.
+
+## 5. Notes
+
+- Commands are shown in PowerShell or Git syntax as appropriate.
+- Reference commands are not proof that a task was completed.
+- Commands should be run from the correct project directory.
+- Git history and the pair repository provide additional evidence of collaboration and merge-conflict practice.
