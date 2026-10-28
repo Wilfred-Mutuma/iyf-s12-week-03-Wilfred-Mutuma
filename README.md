@@ -19,8 +19,9 @@ This project builds on my Week 2 portfolio and demonstrates my progress in HTML,
 ## Features
 
 - Multi-page portfolio with Home, About, Projects, and Contact pages.
+- Daily Challenges page for recording coding practice.
 - Navigation between portfolio pages.
-- CSS styling for the portfolio.
+- CSS styling using an external stylesheet.
 - Contact information and an email link.
 - Git version control and documented development progress.
 - Collaboration practice using branches, pull requests, reviews, and merge-conflict resolution.
@@ -32,25 +33,29 @@ This project builds on my Week 2 portfolio and demonstrates my progress in HTML,
 - **CSS3:** Styling and page layouts.
 - **Git:** Version control, branching, commits, and merging.
 - **GitHub:** Repository hosting and collaboration.
-- **GitHub Pages:** Website hosting, once deployment is verified.
+- **GitHub Pages:** Website hosting.
 - **Visual Studio Code:** Code editing and development.
 - **Command line:** File and directory management.
 
 ## Project Structure
 
+```text
 iyf-s12-week-03-Wilfred-Mutuma/
 ├── daily-challenges/
 │   └── index.html
 ├── images/
-├── index.html
-├── about.html
-├── projects.html
-├── contact.html
-├── styles.css
-├── README.md
+│   └── screenshot.png
 ├── .gitignore
+├── README.md
+├── about.html
+├── contact.html
+├── conflict-test.txt
+├── index.html
 ├── new-project.sh
+├── projects.html
+├── styles.css
 └── terminal-log.md
+```
 
 ## Lessons Learned
 
@@ -70,7 +75,7 @@ During Week 3, I practised:
 
 One challenge in collaborative development is managing changes made to the same file. Merge conflicts require reviewing competing changes, deciding which content to keep, and completing the merge carefully.
 
-I also practised maintaining an organised project structure, writing meaningful commit messages, and checking that repository changes are reflected correctly.
+I also practised maintaining an organised project structure, writing meaningful commit messages, and checking that repository changes are reflected correctly on the live website.
 
 ## Future Improvements
 
@@ -80,15 +85,14 @@ I also practised maintaining an organised project structure, writing meaningful 
 - [ ] Improve accessibility and keyboard navigation.
 - [ ] Add more completed projects.
 - [ ] Test layouts across different screen sizes.
-- [ ] Verify the Week 3 GitHub Pages deployment.
-- [ ] Add a confirmed portfolio screenshot to this README.
+- [ ] Verify that all navigation links work correctly.
 
 ## Contact
 
 - **Name:** Wilfred Mutuma
 - **Email:** [wilfredmtm@gmail.com](mailto:wilfredmtm@gmail.com)
 - **GitHub:** [@Wilfred-Mutuma](https://github.com/Wilfred-Mutuma)
-- **Portfolio:** [Visit My Website](https://wilfred-mutuma.github.io/)
+- **Portfolio:** [Visit My Website](https://wilfred-mutuma.github.io/iyf-s12-week-03-Wilfred-Mutuma/)
 
 ## Collaboration
 
@@ -100,4 +104,4 @@ I also practised maintaining an organised project structure, writing meaningful 
 
 ## License
 
-This project is available under the MIT License if an MIT `LICENSE` file is included in the repository.
+No license file is currently documented for this project. Add a `LICENSE` file if a license is required for submission.
