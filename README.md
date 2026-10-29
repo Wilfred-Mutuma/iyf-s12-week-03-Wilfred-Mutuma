@@ -104,4 +104,4 @@ I also practised maintaining an organised project structure, writing meaningful 
 
 ## License
 
-No license file is currently documented for this project. Add a `LICENSE` file if a license is required for submission.
+No license has been specified for this educational project. All rights are reserved by default.

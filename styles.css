@@ -340,96 +340,6 @@ footer {
 }
 
 /* ========================================
-   9. BOX MODEL PRACTICE
-======================================== */
-
-/* Four box model examples */
-.box-examples {
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(min(100%, 220px), 1fr)
-    );
-    gap: var(--space-md);
-    margin-top: var(--space-md);
-}
-
-.model-box {
-    padding: 16px;
-    border: 2px solid var(--color-border);
-    background-color: var(--color-primary-light);
-}
-
-.model-box p {
-    margin-top: var(--space-sm);
-}
-
-.content-box {
-    background-color: var(--color-primary-light);
-    border-color: var(--color-border);
-}
-
-.padding-box {
-    padding: 28px;
-    background-color: #bfdbfe;
-    border-color: var(--color-primary);
-}
-
-.border-box-example {
-    border: 5px solid var(--color-primary);
-    background-color: var(--color-primary-light);
-}
-
-.margin-box {
-    margin: 12px;
-    padding: 12px;
-    border: 2px dashed var(--color-primary);
-    background-color: #eff6ff;
-    outline: 1px dotted var(--color-muted);
-    outline-offset: 4px;
-}
-
-/* Exercise: total width of 300px */
-.broken-box {
-    width: 300px;
-    max-width: 100%;
-    padding: 20px;
-    border: 1px solid var(--color-border);
-    background-color: var(--color-primary-light);
-    margin-top: var(--space-md);
-}
-
-.broken-box p {
-    margin: 0;
-}
-
-/* Exercise: portfolio card with total width of 300px */
-.practice-card {
-    width: 300px;
-    max-width: 100%;
-    padding: 20px;
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    background-color: var(--color-surface);
-    margin-top: var(--space-md);
-}
-
-.practice-card img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-.practice-card-content {
-    padding-top: 16px;
-}
-
-.practice-card h3 {
-    margin-bottom: 15px;
-}
-
-/* ========================================
    10. FLEXBOX LAYOUT
 ======================================== */
 
@@ -718,18 +628,4 @@ section + section {
 footer {
     max-width: var(--content-width);
     margin-inline: auto;
-}
-
-/* Respect users who prefer less motion */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
-        animation: none !important;
-    }
 }

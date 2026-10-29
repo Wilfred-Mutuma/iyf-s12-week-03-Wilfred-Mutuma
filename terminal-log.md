@@ -54,3 +54,16 @@ The Git history contains commits related to merge-conflict resolution:
 - Reference commands are not proof that a task was completed.
 - Commands should be run from the correct project directory.
 - Git history and the pair repository provide additional evidence of collaboration and merge-conflict practice.
+
+## 6. Project Setup Script Test
+
+The `new-project.sh` script was tested successfully using Git Bash.
+
+Commands executed:
+
+- `chmod +x new-project.sh` — made the script executable.
+- `./new-project.sh test-project` — ran the script to create a test project structure.
+- `rm -r test-project` — removed the temporary test project after testing.
+- `ls` — listed the project files and confirmed that the temporary folder had been removed.
+
+**Result:** The script executed successfully and displayed `Project test-project created successfully!`. The temporary test folder was removed, leaving the Week 3 project files intact.
